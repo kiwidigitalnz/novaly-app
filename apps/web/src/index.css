@@ -1,9 +1,25 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @layer base {
+  :root {
+    --color-primary: 0 107 94;
+    --color-primary-foreground: 255 255 255;
+    --color-accent: 255 166 41;
+    --color-accent-foreground: 255 255 255;
+    --color-background: 255 255 255;
+    --color-foreground: 10 10 10;
+    --color-surface-0: 255 255 255;
+    --color-surface-1: 246 246 247;
+    --color-surface-2: 237 237 240;
+    --color-border-muted: 215 215 219;
+    --color-input: 215 215 219;
+    --color-ring: 0 107 94;
+    --color-muted: 246 246 247;
+    --color-muted-foreground: 107 114 128;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    background-color: rgb(var(--color-background));
+    color: rgb(var(--color-foreground));
   }
 }
